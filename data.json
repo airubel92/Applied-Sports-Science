@@ -1,0 +1,43 @@
+{
+  "project_info": {
+    "title": "Empowering Athletic Performance",
+    "researcher": "Md. Aminul Islam Rubel",
+    "institution": "Brit College of Engineering & Technology (BCET)",
+    "total_records": 10000,
+    "total_athletes": 50
+  },
+  "summary_statistics": {
+    "avg_heart_rate": 145,
+    "avg_fatigue_index": 0.54,
+    "avg_sleep_quality": 6.8,
+    "injury_prediction_accuracy": "92%"
+  },
+  "time_series_data": [
+    { "day": "Day 1", "heart_rate": 138, "fatigue_index": 0.35, "injury_risk": 0.15 },
+    { "day": "Day 2", "heart_rate": 145, "fatigue_index": 0.42, "injury_risk": 0.22 },
+    { "day": "Day 3", "heart_rate": 160, "fatigue_index": 0.68, "injury_risk": 0.55 },
+    { "day": "Day 4", "heart_rate": 168, "fatigue_index": 0.82, "injury_risk": 0.88 },
+    { "day": "Day 5", "heart_rate": 142, "fatigue_index": 0.55, "injury_risk": 0.45 },
+    { "day": "Day 6", "heart_rate": 135, "fatigue_index": 0.40, "injury_risk": 0.25 },
+    { "day": "Day 7", "heart_rate": 140, "fatigue_index": 0.38, "injury_risk": 0.20 }
+  ],
+  "feature_importance": [
+    { "feature": "Fatigue Index", "importance": 0.45 },
+    { "feature": "Previous Injury", "importance": 0.25 },
+    { "feature": "Heart Rate", "importance": 0.15 },
+    { "feature": "Sleep Quality", "importance": 0.10 },
+    { "feature": "Age", "importance": 0.05 }
+  ],
+  "athlete_profiles": [
+    {
+      "id": "ATH-001",
+      "status": "Safe",
+      "metrics": { "hr": 142, "fatigue": 0.45, "sleep": 7 }
+    },
+    {
+      "id": "ATH-002",
+      "status": "High Risk",
+      "metrics": { "hr": 168, "fatigue": 0.82, "sleep": 4 }
+    }
+  ]
+}

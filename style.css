@@ -1,0 +1,155 @@
+/* --- Google Fonts & Variables --- */
+:root {
+    --primary-color: #007bff; /* Professional Blue */
+    --secondary-color: #6c757d;
+    --dark-bg: #121212;
+    --light-bg: #f8f9fa;
+    --accent-color: #00d4ff;
+    --text-main: 'Poppins', sans-serif;
+    --text-heading: 'Book Antiqua', serif; /* Following Template Guideline [cite: 104] */
+}
+
+/* --- Global Styles --- */
+body {
+    font-family: var(--text-main);
+    line-height: 1.6;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--text-heading);
+    font-weight: 700;
+}
+
+/* --- Navigation --- */
+.navbar {
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.navbar-brand {
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-weight: 400;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--accent-color) !important;
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    animation: fadeInDown 1s ease;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    animation: fadeInUp 1.2s ease;
+}
+
+/* --- Methodology Cards --- */
+.heading-line {
+    width: 60px;
+    height: 4px;
+    background: var(--primary-color);
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+    cursor: default;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+
+.icon-box {
+    font-size: 3rem;
+    background: #e7f1ff;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+    color: var(--primary-color);
+}
+
+/* --- Dashboard Section --- */
+#dashboard {
+    background: white;
+}
+
+canvas {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* --- Findings Section --- */
+#findings {
+    background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+}
+
+#findings h3 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+    background: linear-gradient(to right, #00d4ff, #007bff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* --- Animations --- */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Responsiveness (Mobile Friendly) --- */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero-section {
+        height: auto;
+        padding: 100px 0;
+    }
+
+    .navbar-collapse {
+        background: rgba(0,0,0,0.9);
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+}
+
+/* Footer Styling */
+footer {
+    background-color: #f1f1f1;
+}
+
+footer p {
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+}
